@@ -1,6 +1,6 @@
 import React from 'react'
 
-const PortfolioCard = ({ title, description, imageUrl, tags, links, onClick }) => {
+const PortfolioCard = ({ title, description, imageUrl, tags, links, index }) => { // Added index prop
     // Truncate description if it's too long for the card preview
     const truncatedDescription = description.length > 150
         ? description.substring(0, 150) + '...'
@@ -8,8 +8,8 @@ const PortfolioCard = ({ title, description, imageUrl, tags, links, onClick }) =
 
     return (
         <div
-            className="relative overflow-hidden rounded-lg shadow-lg group transform transition duration-500 hover:scale-105 cursor-pointer"
-            onClick={onClick} // Add onClick handler here
+            className="relative overflow-hidden rounded-lg shadow-lg group transform transition duration-500 hover:scale-105 animate-fade-in-up-staggered" // Added animation class
+            style={{ animationDelay: `${index * 0.1}s` }} // Staggered delay
         >
             <img
                 src={imageUrl}
@@ -45,7 +45,6 @@ const PortfolioCard = ({ title, description, imageUrl, tags, links, onClick }) =
                             rel="noopener noreferrer"
                             className="text-white hover:text-blue-300 transition-colors duration-300"
                             aria-label={linkItem.iconType === "github" ? "GitHub Link" : "Website Link"}
-                            onClick={(e) => e.stopPropagation()} // Prevent modal from closing when clicking links
                         >
                             {linkItem.iconType === "github" ? (
                                 <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
