@@ -21,7 +21,7 @@ export default {
     },
 
     
-    about: "A highly motivated Fullstack Developer and Software Engineer with a strong command of React, CSS, and Python. My expertise extends to C#, React Native, TypeScript, PHP, and Kotlin. I hold a Bachelor of Engineering in Information Technology from OAMK (August 2023), complemented by international exchange studies in Japan focused on robotics and advanced programming. I am actively seeking a Software Developer role where I can apply my skills to innovative projects, thriving in both on-site and remote environments.",
+    about: "A highly motivated Fullstack Developer and Software Engineer with a strong command of React, Vue, CSS, and Python. My expertise extends to C#, React Native, Pixi Js, TypeScript, PHP, and Kotlin. Additionally, I have experience working on videogame projects using Unity, Game Maker and Pixi Js. I hold a Bachelor of Engineering in Information Technology from OAMK (August 2023), complemented by international exchange studies in Japan focused on robotics and advanced programming. I am actively seeking a Software or Game Developer role where I can apply my skills to innovative projects, thriving in both on-site and remote environments.",
 
     workexp: [
         {
@@ -77,7 +77,7 @@ export default {
     skills: [ 
         {
             title: "Front-end",
-            description: ["React", "CSS", "Bootstrap", "Material UI", "Typescript", "React Native"]
+            description: ["React", "CSS", "Bootstrap", "Material UI", "Typescript", "Pixi Js", "React Native"]
         },
         {
             title: "Back-end",
@@ -89,11 +89,30 @@ export default {
         },
         {
             title: "Design",
-            description: ["SAI2", "Shotcut"]
+            description: ["Unity", "Game Maker", "SAI2", "Shotcut", "MS Clipchamp"]
         },
     ],
 
     Portfolio: [
+        {
+            tag: 'Other',
+            caption: "Created an infinite scrolling platformer game",
+            image: "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.sketchfab.com%2Fmodels%2F5fcfa49f8fca497ab3bca677f2b80c1c%2Fthumbnails%2F4ab379687e3e43bd8f205ed133b252e2%2F15f65e08d2bb4c69ba58d831caf7a38b.jpeg&f=1&nofb=1&ipt=499b5fe2f03e1c963ee5ca23bd3bf0502df46eb8c7dfa6082df39aebeb5c1347",
+            title: "Game and level design",
+            desc: "Made an infinite vertical scrolling platformer game on GM with all hand drawn assets, then ported it to mobile.",
+            links: [
+                { link: "https://github.com/Dmitrii-Weaver/", iconType: "github" }
+            ]
+        },        {
+            tag: 'Other',
+            caption: "Designed assets for other projects",
+            image: "https://i.imgur.com/hfFCpqT.png",
+            title: "Game and level design",
+            desc: "Designed and created assets for indie game projects",
+            links: [
+                { link: "https://imgur.com/a/294NhC5", iconType: "web" }
+            ]
+        },
         {
             tag: 'Other',
             caption: "Assisted in game and level design for a small indie game project",
